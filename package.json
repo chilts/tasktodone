@@ -1,0 +1,27 @@
+{
+  "directories": {
+    "lib": "lib"
+  },
+  "name": "tasktodone",
+  "title": "ALL PACKAGES NEED A TITLE!",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently --prefix-colors cyan --names 'server' npm:watch-server",
+    "watch-server": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  },
+  "author": "",
+  "license": "ISC"
+}
